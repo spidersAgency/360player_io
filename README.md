@@ -1,4 +1,4 @@
-# Wordpress integration for 360player.io #
+# WordPress integration for 360player.io #
 **Contributors:** palmiak  
 **Tags:** 360, 360 images, oembed, shortcode, 360 photos, photos, 360 degree panorama  
 **Requires at least:** 4.4  
@@ -7,11 +7,11 @@
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
-Embed 360 images from http://360player.io into Wordpress via oembed or shortcode.
+Embed 360 images from http://360player.io into WordPress via oembed or shortcode.
 
 ## Description ##
 
-You can embed [360player.io](http://360player.io) player into Wordpress via **oembed**:
+You can embed [360player.io](http://360player.io) player into WordPress via **oembed**:
 - https://360player.io/player/k6f7rb/
 
 or with **shortcode**:
