@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:     Wordpress Integration for 360player.io
- * Plugin URI:      https://spiders.agency
+ * Plugin Name:     WordPress Integration for 360player.io
+ * Plugin URI:      https://github.com/spidersAgency/360player_io
  * Description:     Adds oembed and shortcode for 360player.io onto your website.
  * Author:          Maciej Palmowski
  * Author URI:      https://spiders.agency
