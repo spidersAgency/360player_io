@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:     360player
+ * Plugin Name:     Wordpress Integration for 360player.io
  * Plugin URI:      https://spiders.agency
- * Description:     WordpPress integration for 360Player.io
+ * Description:     Adds oembed and shortcode for 360player.io onto your website.
  * Author:          Maciej Palmowski
  * Author URI:      https://spiders.agency
  * Text Domain:     360player
@@ -23,7 +23,7 @@ if ( !class_exists( 'Player_360io' ) ) {
             $this->class = '';
             $this->pattern = '#(?:http|https)://360player\.io/(?:player|p)/(.*)/#i';
         }
-        
+
         /**
          * Loads scripts when loading shortcode
          */
@@ -46,12 +46,12 @@ if ( !class_exists( 'Player_360io' ) ) {
                     'width' => $this->width ,
                     'height' => $this->height,
                     'class' => $this->class,
-                    'movie_id' => '' 
+                    'movie_id' => ''
                 ], $atts, '360player' ) );
             }
 
             $embed = '<iframe src="https://360player.io/p/'. $movie_id .'/" frameborder="0" width="'.$this->width.'" height="'. $this->height.'" allowfullscreen data-token="'.$movie_id.'" class="'.$this->class.'"></iframe>';
-            
+
             return $embed;
         }
 

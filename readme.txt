@@ -7,17 +7,22 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Embed 360 Images from [360player.io](http://360player.io) into Wordpress via Oembed or shortcode.
+Embed 360 images from http://360player.io into Wordpress via oembed or shortcode.
 
 == Description ==
 
-You can embed 360player.io player into Wordpress via **Oembed**:
+You can embed [360player.io](http://360player.io) player into Wordpress via **oembed**:
 - https://360player.io/player/k6f7rb/
 
-or with shortcode:
+or with **shortcode**:
 - `[360player movie_id="k6f7rb"]` - default usage
 - `[360player movie_id="k6f7rb" width="500" height="250"]` - change width and height
 - `[360player movie_id="k6f7rb" class="custom_class"]` - add custom class to iframe
+
+Also you can set default width, height or css class via filters:
+- `360player_embed_width`
+- `360player_embed_height`
+- `360player_embed_class`
 
 == Installation ==
 
