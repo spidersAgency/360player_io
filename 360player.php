@@ -24,6 +24,11 @@ if ( !class_exists( 'Player_360io' ) ) {
             $this->pattern = '#(?:http|https)://360player\.io/(?:player|p)/(.*)/#i';
         }
 
+        function init() {
+            wp_embed_register_handler( '360player', $this->pattern, [ $this, 'wp_embed_handler' ] );
+            add_shortcode( '360player', [ $this, 'shortcode' ] );
+        }
+
         /**
          * Loads scripts when loading shortcode
          */
@@ -71,8 +76,6 @@ if ( !class_exists( 'Player_360io' ) ) {
         }
     }
 
-    $player_io = new Player_360io();
-    wp_embed_register_handler( '360player', $player_io->pattern, [ $player_io, 'wp_embed_handler' ] );
-    add_shortcode( '360player', [ $player_io, 'shortcode' ] );
-
+    $player360_io = new Player_360io();
+    add_action( 'init', [ $player360_io, 'init' ] );
 }
