@@ -1,6 +1,6 @@
 # Wordpress integration for 360player.io #
 **Contributors:** palmiak  
-**Tags:** 360, 360 images, oembed, shortcode  
+**Tags:** 360, 360 images, oembed, shortcode, 360 photos, photos, 360 degree panorama  
 **Requires at least:** 4.4  
 **Tested up to:** 4.8.1  
 **Stable tag:** 1.0.0  
